@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.daimajia.numberprogressbar:library:1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f3dbb31c30302a6cb9f54c7a43808be7/transformed/jetified-library-1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f3dbb31c30302a6cb9f54c7a43808be7/transformed/jetified-library-1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f3dbb31c30302a6cb9f54c7a43808be7/transformed/jetified-library-1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daimajia.numberprogressbar/library/1.4/ff3c1141ad7366f9e1248284a19661abacbef84c/library-1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daimajia.numberprogressbar/library/1.4/fcc2dd900e02a61ee357ada5e620bd9f9344a064/library-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

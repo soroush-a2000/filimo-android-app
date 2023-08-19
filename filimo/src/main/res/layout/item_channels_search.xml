@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/channels_livetv"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorAccent"
+            android:layout_width="40dp"
+            android:layout_height="7dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="visible"
+        android:id="@+id/recycle_view_channels_item"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/movies_and_series"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorAccent"
+            android:layout_width="40dp"
+            android:layout_height="7dp" />
+    </RelativeLayout>
+</LinearLayout>

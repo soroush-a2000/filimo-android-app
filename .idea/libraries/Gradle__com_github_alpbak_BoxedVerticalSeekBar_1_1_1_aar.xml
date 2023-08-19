@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.alpbak:BoxedVerticalSeekBar:1.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/14c06d85c7190d4ff79e4b0543295cd0/transformed/jetified-BoxedVerticalSeekBar-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/14c06d85c7190d4ff79e4b0543295cd0/transformed/jetified-BoxedVerticalSeekBar-1.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/14c06d85c7190d4ff79e4b0543295cd0/transformed/jetified-BoxedVerticalSeekBar-1.1.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.alpbak/BoxedVerticalSeekBar/1.1.1/79f96eb0c31404c457afd346eee89bd64812f497/BoxedVerticalSeekBar-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

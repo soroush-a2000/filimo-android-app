@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/action_button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/pill_ripple_effect"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="2.5dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="2.5dp">
+
+        <TextView
+            android:id="@+id/text_view_btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="پخش"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:tint="@color/white"
+
+            app:srcCompat="@drawable/ic_play" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layoutDirection="ltr"
+    tools:context="com.movieboxtv.app.ui.activities.IntroActivity">
+    <com.movieboxtv.app.ui.views.ClickableViewPager
+        android:gravity="center"
+        android:id="@+id/view_pager_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.movieboxtv.app.ui.views.ClickableViewPager>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <com.github.vivchar.viewpagerindicator.ViewPagerIndicator
+                android:layout_marginStart="20dp"
+                android:id = "@+id/view_pager_indicator"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                app:itemTint="@color/colorAccent"
+                app:showDividers="beginning"
+                app:delimiterSize = "6dp"
+                app:itemSize="8dp"
+
+                />
+            <LinearLayout
+                android:id="@+id/linear_layout_next"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+                <TextView
+                    android:id="@+id/text_view_next_done"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/next_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_layout_skip"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+                <TextView
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/skip_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#292f39">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="293dp">
+
+                    <ImageView
+                        android:id="@+id/image_View_bg_top"
+                        android:layout_width="800dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="-55dp"
+                        android:layout_marginBottom="-55dp"
+                        android:background="@drawable/login_top_bg" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/blue_bg_sub" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="293dp"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha="0.9"
+                        android:background="@drawable/blue_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="52dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="77dp"
+                            android:layout_height="77dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="18dp"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_login_black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginEnd="60dp"
+                            android:background="@drawable/bg_buttons_top_login">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_layout_activity_login_top_btn_login"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_btn_login"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:gravity="center"
+                                        android:text="ورود"
+                                        android:textColor="@color/white"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/black"
+                                android:orientation="vertical" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_layout_activity_login_top_btn_register"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:visibility="visible">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:gravity="center"
+                                        android:text="ثبت نام"
+                                        android:textColor="@color/white"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_activity_login_form_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_login_activity_login_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/border_redius_cornwe">
+
+                    <EditText
+                        android:id="@+id/edit_text_phone_number_login_acitivty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/number_icon"
+                        android:background="@android:color/transparent"
+                        android:hint="شماره موبایل"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green_bg_light"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textDirection="ltr"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/number_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        app:srcCompat="@drawable/ic_baseline_phone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/border_redius_cornwe">
+
+                    <EditText
+                        android:id="@+id/edit_text_password_login_acitivty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/icon"
+                        android:background="@android:color/transparent"
+                        android:hint="رمز عبور"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green_bg_light"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textDirection="ltr"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        app:srcCompat="@drawable/ic_lock_outline_black_24dp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text_view_btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/login_buttons_bg"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="ورود"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_activity_login_reset_pass_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="5dp"
+                    android:text="فراموشی رمز عبور"
+                    android:textColor="#FBC02D"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_activity_login_form_reset_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="فراموشی رمز عبور"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="لطفا شماره موبایل وارد شده در هنگام ثبت نام را وارد نمایید"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/border_redius_cornwe">
+
+                    <EditText
+                        android:id="@+id/edit_text_phone_number_login_acitivty_for_reset_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/number_icon_two"
+                        android:background="@android:color/transparent"
+                        android:hint="شماره موبایل"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green_bg_light"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textDirection="ltr"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/number_icon_two"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        app:srcCompat="@drawable/ic_baseline_phone" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text_view_btn_reset_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="82dp"
+                    android:background="@drawable/login_buttons_bg"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="ارسال رمز عبور جدید"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_activity_login_form_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="لطفا شماره موبایل خود را جهت ثبت نام وارد نمایید"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_login_activity_register_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/border_redius_cornwe">
+
+                    <EditText
+                        android:id="@+id/edit_text_phone_number_register_acitivty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/number_register_icon"
+                        android:background="@android:color/transparent"
+                        android:hint="شماره موبایل"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green_bg_light"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textDirection="ltr"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/number_register_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        app:srcCompat="@drawable/ic_baseline_phone" />
+
+                </RelativeLayout>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/white"
+                    android:gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/white"
+                    android:text="قوانین و مقررات را خوانده و آن را میپذیرم."/>
+
+                <TextView
+                    android:id="@+id/text_view_btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/login_buttons_bg"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="ادامه"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_layout_otp_confirm_login_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="46dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="لطفا کد تایید پیامک شده به شماره مورد نظر را وارد نمایید"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <com.chaos.view.PinView
+                    android:id="@+id/otp_edit_text_login_activity"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cursorColor="@color/white"
+                    app:cursorWidth="2dp"
+                    app:hideLineWhenFilled="true"
+                    app:itemCount="5"
+                    app:itemHeight="48dp"
+                    app:itemRadius="5dp"
+                    app:itemSpacing="10dp"
+                    app:itemWidth="48dp"
+                    app:lineWidth="2dp"
+                    app:viewType="rectangle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:id="@+id/linear_layout_box_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="ارسال مجدد کد بعد از : "
+                            android:textColor="#DFDFDF"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_view_show_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="00:00"
+                            android:textColor="#F10000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/text_view_btn_send_again_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="ارسال مجدد کد"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_view_btn_change_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:text="تغییر شماره"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_btn_confirm_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/login_buttons_bg"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="برسی"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_activity_login_form_register_pasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="رمز عبور مورد نظر خود را وارد نمایید"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:id="@+id/edit_text_password_register_acitivty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/border_redius_cornwe">
+
+                    <EditText
+                        android:id="@+id/edit_text_password_login_acitivty_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/icon_lock_register"
+                        android:background="@android:color/transparent"
+                        android:hint="رمز عبور"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green_bg_light"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textDirection="ltr"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/icon_lock_register"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        app:srcCompat="@drawable/ic_lock_outline_black_24dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/edit_text_password_confirm_register_acitivty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/border_redius_cornwe">
+
+                    <EditText
+                        android:id="@+id/edit_text_password_confirm_login_acitivty_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/icon_lock_register_confirm"
+                        android:background="@android:color/transparent"
+                        android:hint="تکرار رمز عبور"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="17dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="17dp"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/green_bg_light"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textDirection="ltr"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/icon_lock_register_confirm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="17dp"
+                        app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_view_btn_register_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="18.7dp"
+                    android:layout_marginRight="62dp"
+                    android:background="@drawable/login_buttons_bg"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="ثبت نام"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+
+
+                <TextView
+                    android:id="@+id/text_view_activity_login_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_button_support_bg"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="پشتیبانی"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ghavanin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_button_support_bg"
+                    android:drawableStart="@drawable/ic_baseline_menu_book_24"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="قوانین و مقررات"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_progress_login_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/login_load_progress" />
+    </LinearLayout>
+
+</RelativeLayout>

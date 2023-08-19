@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zarinpal:purchase:0.0.8-beta@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc68afb8e4b939195e02f8c1c4ffeb06/transformed/jetified-purchase-0.0.8-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc68afb8e4b939195e02f8c1c4ffeb06/transformed/jetified-purchase-0.0.8-beta/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fc68afb8e4b939195e02f8c1c4ffeb06/transformed/jetified-purchase-0.0.8-beta/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zarinpal/purchase/0.0.8-beta/dc8c18f8cf280ab647d8828c0d504ca10e9c1028/purchase-0.0.8-beta-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zarinpal/purchase/0.0.8-beta/3c460aa2bb231a41e3d67f17e4826c6a9569cae9/purchase-0.0.8-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

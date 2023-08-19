@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/downloadfgh"
+        android:title="دانلود" />
+    <item
+        android:id="@+id/channel"
+        android:icon="@drawable/tvmonitor"
+        android:title="تلویزیون" />
+    <item
+        android:id="@+id/serial"
+        android:icon="@drawable/playlist2"
+        android:title="سریال" />
+    <item
+        android:id="@+id/film"
+        android:icon="@drawable/clapperboard"
+        android:title="فیلم" />
+    <item
+        android:id="@+id/homeman"
+        android:icon="@drawable/homennoe"
+        android:title="خانه" />
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_slide"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="470dp">
+
+
+    <FrameLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@android:color/transparent">
+
+
+        <com.movieboxtv.app.ui.views.AutoScrollViewPager
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:id="@+id/view_pager_slide"
+            android:layout_width="match_parent"
+            android:layout_height="470dp">
+        </com.movieboxtv.app.ui.views.AutoScrollViewPager>
+
+    </FrameLayout>
+    <com.github.vivchar.viewpagerindicator.ViewPagerIndicator
+        android:id = "@+id/view_pager_indicator"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        app:itemSelectedTint="@color/white"
+        app:itemTint="@color/white_text"
+        android:padding="3dp"
+        app:delimiterSize = "4dp"
+        app:itemSize="6dp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

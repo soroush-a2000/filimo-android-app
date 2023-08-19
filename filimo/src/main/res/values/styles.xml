@@ -1,0 +1,245 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeActionDestils" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">#0C1327</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">#23ffffff</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+
+
+        <item name="android:fontFamily">@font/sans</item>
+        <item name="fontFamily">@font/sans</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">#1e1e1e</item>
+        <item name="cardViewStyle">@style/DarkCardView</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogDarkTheme</item>
+        <item name="android:forceDarkAllowed">false</item>
+
+    </style>
+
+    <style name="DarkCardView" parent="CardView.Dark">
+        <item name="cardBackgroundColor">#1e1e1e</item>
+    </style>
+
+    <style name="AppBottomSheetDialogDarkTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalDarkStyle</item>
+    </style>
+
+    <style name="AppModalDarkStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_bottom_shit_dark</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeNoAction" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+        <item name="android:fontFamily">@font/sans</item>
+        <item name="fontFamily">@font/sans</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">#1e1e1e</item>
+        <item name="cardViewStyle">@style/DarkCardView</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogDarkTheme</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Theme_Dialog_write" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppThemeNoActionLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.UserDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="NavigationView" parent="Base.Theme.AppCompat">
+        <item name="android:listDivider">@color/white_text</item>
+        <item name="android:textColorSecondary">@color/white_text</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="CustomText">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="dialogman" parent="@android:style/Theme.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/black</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">#f9a825</item>
+        <item name="android:colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="Theme.CastVideosDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+        <item name="castIntroOverlayStyle">@style/CustomCastIntroOverlay</item>
+        <item name="castExpandedControllerStyle">@style/CustomCastExpandedController</item>
+        <item name="castExpandedControllerToolbarStyle">
+            @style/ThemeOverlay.AppCompat.ActionBar
+        </item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CustomCastIntroOverlay" parent="CastIntroOverlay">
+        <item name="castButtonTextAppearance">@style/TextAppearance.CustomCastIntroOverlay.Button
+        </item>
+        <item name="castTitleTextAppearance">@style/TextAppearance.CustomCastIntroOverlay.Title
+        </item>
+    </style>
+
+    <style name="CustomCastMiniController" parent="CastExpandedController">
+        <item name="castShowImageThumbnail">true</item>
+
+        <item name="castBackground">@color/transparent</item>
+        <item name="castButtonColor">@color/yellow</item>
+
+        <item name="castProgressBarColor">@color/yellow</item>
+        <item name="castMiniControllerLoadingIndicatorColor">@color/yellow</item>
+        <item name="castAdBreakMarkerColor">@color/yellow</item>
+        <item name="castAdInProgressTextColor">@color/yellow</item>
+        <item name="castSeekBarProgressAndThumbColor">@color/yellow</item>
+        <item name="castLiveIndicatorColor">@color/yellow</item>
+        <item name="castExpandedControllerLoadingIndicatorColor">@color/yellow</item>
+        <item name="castSeekBarTooltipBackgroundColor">@color/yellow</item>
+
+        <item name="castControlButtons">
+            @array/cast_mini_controller_control_buttons
+        </item>
+    </style>
+
+    <style name="CustomCastExpandedController" parent="CastExpandedController">
+
+        <item name="castButtonColor">@color/yellow</item>
+        <item name="castAdBreakMarkerColor">@color/yellow</item>
+        <item name="castAdInProgressTextColor">@color/yellow</item>
+        <item name="castSeekBarProgressAndThumbColor">@color/yellow</item>
+
+        <item name="castLiveIndicatorColor">@color/red</item>
+        <item name="castExpandedControllerLoadingIndicatorColor">@color/yellow</item>
+        <item name="castSeekBarTooltipBackgroundColor">@color/yellow</item>
+        <item name="castPlayButtonDrawable">@drawable/cast_ic_expanded_controller_play</item>
+        <item name="castPauseButtonDrawable">@drawable/cast_ic_expanded_controller_pause</item>
+        <item name="castStopButtonDrawable">@drawable/cast_ic_expanded_controller_stop</item>
+        <item name="castSkipPreviousButtonDrawable">
+            @drawable/cast_ic_expanded_controller_skip_previous
+        </item>
+        <item name="castSkipNextButtonDrawable">@drawable/cast_ic_expanded_controller_skip_next
+        </item>
+        <item name="castRewind30ButtonDrawable">@drawable/cast_ic_expanded_controller_rewind30
+        </item>
+        <item name="castForward30ButtonDrawable">@drawable/cast_ic_expanded_controller_forward30
+        </item>
+        <item name="castControlButtons">
+            @array/cast_expanded_controller_control_buttons
+        </item>
+    </style>
+
+    <style name="TextAppearance.CustomCastIntroOverlay.Button" parent="android:style/TextAppearance">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="TextAppearance.CustomCastIntroOverlay.Title" parent="android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="MiniControllerTextAppearace" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="BottomSheetItem">
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="fontFamily">@font/yekan</item>
+    </style>
+
+</resources>

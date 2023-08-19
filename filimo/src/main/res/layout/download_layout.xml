@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_download_adm"
+        style="@style/BottomSheetItem"
+        android:drawableEnd="@drawable/download_multiple"
+        android:drawableRight="@drawable/download_multiple"
+        android:text="دانلود با ADM "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_download"
+        style="@style/BottomSheetItem"
+        android:drawableEnd="@drawable/cloud_download"
+        android:drawableRight="@drawable/cloud_download"
+        android:text="دانلود از اپلیکیشن"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_download_adm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_view_item_genre_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_genre"
+        android:paddingStart="7dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="7dp"
+        android:fontFamily="@font/vazir"
+        android:paddingBottom="5dp"
+        android:text="درام"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

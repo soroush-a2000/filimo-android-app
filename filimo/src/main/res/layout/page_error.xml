@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_signal_wifi_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+
+                android:shadowColor="#ffffff"
+                android:shadowDy="1"
+                android:shadowDx="1"
+                android:shadowRadius="5"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="@string/error_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="@drawable/bg_loading_subtitles_accent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:id="@+id/button_try_again"
+
+                android:textStyle="bold"
+                android:text="@string/try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

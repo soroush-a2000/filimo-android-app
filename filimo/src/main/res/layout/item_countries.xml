@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/countryfild"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="start|center_vertical|center_horizontal|center"
+            android:text="@string/movies_and_series_countries"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_width="40dp"
+            android:layout_height="7dp" />
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="visible"
+        android:layoutAnimation="@anim/layout_animation"
+        android:id="@+id/recycle_view_countries_item_countries"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_width="match_parent"/>
+</LinearLayout>

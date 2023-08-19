@@ -1,0 +1,220 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.movieboxtv.app.ui.fragments.SeriesFragment">
+    <RelativeLayout
+        android:id="@+id/relative_layout_popular_f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout_channel_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/linear_layout_load_channel_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/place_holder_page_grid_channels" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linear_layout_page_error_channel_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/page_error" />
+                </LinearLayout>
+                <ImageView
+                    android:visibility="gone"
+                    android:padding="100dp"
+                    app:srcCompat="@drawable/ic_data_empty"
+                    android:id="@+id/image_view_empty_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:layoutAnimation="@anim/layout_animation"
+                    android:id="@+id/recycler_view_channel_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    />
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relative_layout_channel_fragement_filtres_button"
+            android:background="@drawable/bg_filter_pruple"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <ImageView
+
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_tune"
+                android:layout_width="30dp"
+                android:tint="@color/white"
+                android:layout_height="30dp" />
+            <TextView
+
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="35dp"
+                android:text="@string/filtres"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_channel_fragement_filtres_layout"
+            android:visibility="gone"
+            android:focusable="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="25dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/pruple"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginEnd="30dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+
+                        android:id="@+id/relative_layout_frament_channel_countries"
+                        android:background="@drawable/border_right_filtres"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:padding="10dp"
+                            android:tint="@color/white"
+
+                            app:srcCompat="@drawable/ic_public"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            style="@style/mySpinnerItemStyle"
+                            android:layout_marginStart="45dp"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/spinner_fragement_channel_countries_list"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_arrow_down" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_frament_channel_categories"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:padding="7dp"
+
+                            app:srcCompat="@drawable/ic_sort"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinner_fragement_channel_categories_list"
+                            android:layout_marginStart="45dp"
+                            android:background="@android:color/transparent"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="3dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_arrow_down" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/bg_filtres"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/image_view_channel_fragement_close_filtres"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:focusable="true"
+                        android:clickable="true"
+
+                        app:srcCompat="@drawable/ic_close"
+                        android:padding="7dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relative_layout_load_more_channel_fragment"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_loading_more"
+            android:layout_marginBottom="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ProgressBar
+                android:padding="5dp"
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="playerVm"
+            type="com.movieboxtv.app.ui.player.CustomPlayerViewModel" />
+    </data>
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="@{playerVm.isLoaidingNow ? View.VISIBLE : View.GONE}" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment
+                app:layout_insetEdge="bottom"
+                android:id="@+id/caster_mini_controller"
+                class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:castTitleTextAppearance="@style/MiniControllerTextAppearace"
+                app:castSubtitleTextAppearance="@style/MiniControllerTextAppearace"/>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relative_layout_subtitles_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/dialog_subtitles"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

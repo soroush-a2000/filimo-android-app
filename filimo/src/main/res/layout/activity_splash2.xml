@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.movieboxtv.app.ui.activities.SplashActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/login_top_bg"
+            android:scaleType="fitXY"
+            android:layout_width="800dp"
+            android:id="@+id/image_View_bg_top"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splashshadow"/>
+    </FrameLayout>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/splash_logo"
+        android:src="@drawable/filimo_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/site_url"
+        android:layout_below="@+id/splash_logo"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/txtyou"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/sans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:progress_unreached_color="@color/white"
+            custom:progress_reached_color="#E6A94F"
+            custom:progress_unreached_bar_height="3dp"
+            custom:progress_reached_bar_height="3dp"
+            custom:progress_text_size="10sp"
+            custom:progress_text_color="#3498DB"
+            custom:progress_text_offset="1dp"
+            custom:progress_text_visibility="invisible"
+            custom:progress_max="100"
+            custom:progress_current="0"
+            />
+        <TextView
+            android:id="@+id/tv_progres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:fontFamily="@font/yekan"
+            android:textColor="@color/white"
+            android:layout_below="@id/progress_bar"
+            android:layout_centerHorizontal="true"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

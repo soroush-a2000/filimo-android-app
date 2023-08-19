@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#121212"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/placeholder"
+                    android:id="@+id/image_view_item_episode_thumbail"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp" />
+
+            <ImageView
+                android:padding="2dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_eye"
+                android:id="@+id/image_view_item_episode_viewed"
+                android:adjustViewBounds="true"
+                android:layout_width="30dp"
+                android:layout_height="25dp" />
+
+            <ImageView
+                android:alpha="0.7"
+                android:padding="25dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:tint="@color/white"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_play"
+                android:id="@+id/image_view_item_episode_play"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="120dp"
+                android:layout_height="90dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="122dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/text_view_item_episode_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/yekan"
+                    android:textColor="@color/white"
+
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_item_episode_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/yekan"
+                    android:lines="3"
+                    android:maxLines="3"
+
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/yekan"
+                android:id="@+id/text_view_item_episode_duration"
+                android:gravity="center"
+                android:shadowDy="1"
+                android:shadowDx="1"
+                android:shadowRadius="4"
+                android:textStyle="bold"
+                android:textSize="11dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="55dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/image_view_item_episode_download"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_file_download" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

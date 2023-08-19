@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/down_adm"
+        android:title="دانلود به کمک ADM" />
+
+    <item
+        android:id="@+id/down_direct"
+        android:title="دانلود با همآهنگ" />
+
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/nav_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="مرتب سازی"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/nav_created"
+                android:icon="@drawable/ic_access_time"
+                android:title="آخرین ها"
+                app:showAsAction="withText"/>
+            <item android:id="@+id/nav_rating"
+                android:icon="@drawable/ic_star_half"
+                android:title="به ترتیب امتیاز"
+                app:showAsAction="withText"/>
+            <item android:id="@+id/nav_imdb"
+                android:icon="@drawable/ic_imdb"
+                android:title="به ترتیب امتیاز IMDb"
+                app:showAsAction="withText"/>
+            <item android:id="@+id/nav_title"
+                android:icon="@drawable/ic_text_fields"
+                android:title="به ترتیب عنوان"
+                app:showAsAction="withText"/>
+            <item android:id="@+id/nav_year"
+                android:icon="@drawable/ic_date"
+                android:title="به ترتیب سال ساخت"
+                app:showAsAction="withText"/>
+            <item android:id="@+id/nav_views"
+                android:icon="@drawable/ic_eye"
+                android:title="به ترتیب بازدید"
+                app:showAsAction="withText"/>
+
+        </menu>
+    </item>
+
+</menu>

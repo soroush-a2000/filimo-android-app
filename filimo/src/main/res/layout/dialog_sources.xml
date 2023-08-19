@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:id="@+id/relative_layout_dialog_source_close"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_view_activity_dialog_sources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+    </RelativeLayout>
+</RelativeLayout>

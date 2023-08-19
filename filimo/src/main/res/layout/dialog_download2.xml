@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_radius_dark"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_comment_back"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:gravity="start">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:tint="@color/colorAccent"
+                        app:srcCompat="@drawable/cloud_download" />
+
+                    <TextView
+                        android:id="@+id/text_view_comment_dialog_count1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:fontFamily="@font/yekan"
+                        android:text="متد دانلود"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_view_comment_dialog_close1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp">
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/yekan"
+                    android:text="برای دانلود فیلم ها میتوانید از نرم افزار مدیریت دانلود ADM استفاده کنید که کمک میکند فایل ها با سرعت بیشتری دانلود شوند."
+                    android:textSize="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/text1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/pish"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/downloadll"
+                        android:drawableStart="@drawable/ic_file_download2"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="دانلود پیش فرض"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/adm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/pish"
+                        android:background="@drawable/login_button_support_bg"
+                        android:drawableStart="@drawable/adm4"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="دانلود با ADM"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

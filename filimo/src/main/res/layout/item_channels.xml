@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_home_more_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="end|center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical|center_horizontal|center"
+            android:text="@string/channels_livetv"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawableEnd="@drawable/ic_arrow_home_black_24dp"
+            android:drawableTint="@color/red"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/see_more"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view_channels_item"
+        android:layout_width="match_parent"
+        android:layoutAnimation="@anim/layout_animation"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:visibility="visible" />
+</LinearLayout>

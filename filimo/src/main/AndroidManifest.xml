@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.movieboxtv.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <!--  در صورت استفاده از درگاه پرداخت بازار یا مایکت پرمیژن آن را از حالت کامنت در بیاورید    -->
+    <!--    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" /> -->
+    <!--    <uses-permission android:name="ir.mservices.market.BILLING"/> -->
+
+
+    <queries>
+        <package android:name="com.dv.adm" />
+        <package android:name="com.mxtech.videoplayer.ad" />
+        <package android:name="org.videolan.vlc" />
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="image/jpeg" />
+        </intent>
+    </queries>
+
+    <queries>
+        <package android:name="com.farsitel.bazaar" />
+        <intent>
+            <action android:name="ir.cafebazaar.pardakht.InAppBillingService.BIND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.movieboxtv.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-->   تنظیمات پوش پل   <-->
+        <meta-data android:name="com.pushpole.sdk.token" android:value="PUSHPOLE_131973861073"/>
+
+        <receiver
+            android:name="com.pushpole.sdk.receiver.BootAndScreenReceiver"
+            android:exported="false">
+            <!-- Intent filter definitions -->
+        </receiver>
+        <service
+            android:name="com.pushpole.sdk.service.ScreenStateService"
+            android:exported="false">
+            <!-- Intent filter definitions -->
+        </service>
+
+        <receiver
+            android:name="com.pushpole.sdk.receiver.UpdateReceiver"
+            android:exported="false">
+            <!-- Intent filter definitions -->
+        </receiver>
+
+        <receiver
+            android:name="com.pushpole.sdk.receiver.ConnectivityReceiver"
+            android:exported="false">
+            <!-- Intent filter definitions -->
+        </receiver>
+        <receiver
+            android:name="com.pushpole.sdk.receiver.AppChangeReceiver"
+            android:exported="false">
+            <!-- Intent filter definitions -->
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <!-- Intent filter definitions -->
+        </receiver>
+
+        <service
+            android:name="com.pushpole.sdk.fcm.FcmService"
+            android:exported="false">
+            <!-- Intent filter definitions -->
+        </service>
+        <!-- end of push pol -->
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service
+            android:name="com.movieboxtv.app.services.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.movieboxtv.app.services.ToastService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.movieboxtv.app.cast.CastOptionsProvider" />
+
+
+        <activity
+            android:name="com.movieboxtv.app.cast.ExpandedControlsActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:launchMode="singleTask"
+
+            android:theme="@style/Theme.CastVideosDark"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="com.movieboxtv.app.ui.activities.PlayerActivity" />
+        </activity>
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.IntroActivity"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.MovieActivity"
+
+            android:theme="@style/AppThemeActionDestils"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.MainActivity"
+
+            android:theme="@style/AppThemeActionDestils"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.YoutubeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.ActorsActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.ActorActivity"
+
+            android:theme="@style/AppThemeActionDestils"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.LoginActivity"
+
+            android:theme="@style/AppThemeNoActionLogin"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.LoadActivity"
+            android:theme="@style/AppThemeActionDestils"
+            android:exported="true"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="@string/panel_url" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.GenreActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.CountryActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.TopActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.MyListActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.SerieActivity"
+
+            android:theme="@style/AppThemeActionDestils"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.EditActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.ChannelActivity"
+
+            android:theme="@style/AppThemeActionDestils"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.CategoryActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.SearchActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.SplashActivity"
+
+            android:theme="@style/AppThemeActionDestils"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.SettingsActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.SupportActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.PolicyActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.EmbedActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.PackageBuyActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.CBZarinPalActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="zarinpal"
+                    android:scheme="flix" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.movieboxtv.app.ui.activities.CBPayActivity"
+
+            android:theme="@style/AppThemeNoAction"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="pay"
+                    android:scheme="flix" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+</manifest>

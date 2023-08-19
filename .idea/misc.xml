@@ -1,0 +1,100 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Novin-Pc/Desktop/filimo app/filimo/src/main/res/layout/exo_playback_control_view.xml" value="0.3351449275362319" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/filimo app/filimo/src/main/res/layout/fragment_player.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/filimo app/filimo/src/main/res/layout/include_player_controllers.xml" value="0.3351449275362319" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/filimo app/filimo/src/main/res/layout/item_package.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/drawable/border_top.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/drawable/dialog_radius.xml" value="0.22314814814814815" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/drawable/ic_imdb.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/drawable/progress_comment.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/activity_intro.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/activity_movie.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/app_bar_home.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/app_bar_home3.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/dialog_comment.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/dialog_download.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/dialog_play.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/dialog_sources.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/fragment_home.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_channels_search.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_episode.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_genres.xml" value="0.33061594202898553" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_poster_home.xml" value="0.33" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_slide_1.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_slide_one.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/layout/item_source_download.xml" value="0.33" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/filimo app new/filimo/src/main/res/menu/expanded_controller.xml" value="0.3323076923076923" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/activity_genre.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/activity_movie.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/activity_splash.xml" value="0.16210739614994935" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/activity_top.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/item_countries.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/item_episode.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/item_genre.xml" value="0.9" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/item_hometop.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/native_ad_layout_1.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/layout/page_error.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/menu/download_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/menu/expanded_controller.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/menu/menu_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Novin-Pc/Desktop/release/filimo/hamahang/filimo/src/main/res/menu/tabs.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable-mdpi/bottom_radius.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable-mdpi/rounded_bottom_shit_dark.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable-nodpi/fragment_shadows.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable/bg_item_pack_selector.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable/bg_package.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable/dialog_radius.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/drawable/dialog_radius_dark.xml" value="0.2105" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/activity_mian.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/activity_mian2.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/activity_movie.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/activity_package_buy.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/activity_support.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/app_bar_home3.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/dialog_subscribe.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/fragment_series.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/item_actors.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/item_package.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/item_slide_one.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/item_slides.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/layout/rounded_bottom_shit_dark.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/menu/global.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/movie box/filimo/src/main/res/menu/tabs.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/drawable-hdpi/ic_volume_up_white.xml" value="0.36944444444444446" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/drawable-xhdpi/ic_file_download2.xml" value="0.187" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/drawable/border_bottom.xml" value="0.187" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/drawable/dialog_radius_dark.xml" value="0.187" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/drawable/ic_baseline_wb_sunny_24.xml" value="0.36944444444444446" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/drawable/login_button_support_bg.xml" value="0.187" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/activity_mian.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/activity_mian2.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/activity_movie.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/activity_splash.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/activity_splash2.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/app_bar_home.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/app_bar_home3.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/dialog_download2.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/exo_playback_control_view.xml" value="0.33" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/fragment_series.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/item_episode.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/layout/series_list.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/menu/tabs.xml" value="0.3625" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.187" />
+        <entry key="..\:/Users/sorou/Desktop/release/release/filimo/hamahang/filimo/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.187" />
+        <entry key="..\:/android/filimo240/android/filimo app/filimo/src/main/res/layout/fragment_player.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

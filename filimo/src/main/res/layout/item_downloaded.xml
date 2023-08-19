@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#262626"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relative_layout_item_download"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/image_view_item_download_image"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/placeholder"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:elevation="2dp"
+                android:alpha="0.7"
+                android:padding="25dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:clickable="true"
+                android:tint="@color/white"
+
+                app:srcCompat="@drawable/ic_play"
+                android:id="@+id/image_view_item_download_play"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <RelativeLayout
+                android:padding="8dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/text_view_item_download_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ترمیناتور 6 "
+
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_item_download_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="1ساعت 20  دقیقه"
+
+                    android:textSize="5pt"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_width="50dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:background="@drawable/bg_delete_item"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:id="@+id/image_view_item_download_delete"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:focusable="true"
+                        android:clickable="true"
+
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_delete"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                </RelativeLayout>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/image_view_item_download_finder"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:focusable="true"
+                    android:clickable="true"
+
+                    android:padding="13dp"
+                    app:srcCompat="@drawable/ic_folder"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/text_view_item_download_size"
+
+                android:textStyle="bold"
+                android:textSize="5pt"
+                android:textColor="@color/white"
+                android:text="1520 MB"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

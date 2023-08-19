@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.movieboxtv.app.ui.activities.PackageBuyActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout_list_package"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView_back"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@+id/close"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    app:srcCompat="@drawable/ic_arrow_forward" />
+
+                                <RelativeLayout
+                                    android:id="@+id/close"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:padding="10dp"
+                                        android:tint="@color/white"
+                                        app:srcCompat="@drawable/ic_subscribe" />
+
+                                    <TextView
+                                        android:id="@+id/text_title_subscribe"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50dp"
+                                        android:layout_marginStart="50dp"
+                                        android:gravity="center|start"
+                                        android:text="@string/premium_title"
+                                        android:textColor="@color/white"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_content_package_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/LinearLayout"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_view_activity_package_top_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="13dp"
+                                android:text="@string/premium_title_play"
+                                android:textColor="@color/yellow"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+
+                            <TextView
+                                android:id="@+id/text_view_if_extension_then"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="13dp"
+                                android:text="@string/description_subsribte"
+                                android:textColor="@color/white_text"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/linear_layout_gone_if_extension_then"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:padding="7dp"
+                                        android:tint="#ccc"
+                                        app:srcCompat="@drawable/ic_file_download" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center|start"
+                                            android:text="@string/download_premium_content"
+                                            android:textColor="@color/white"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:padding="7dp"
+                                        android:tint="#ccc"
+                                        app:srcCompat="@drawable/ic_media_play_dark" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center|start"
+                                            android:text="@string/play_premium_content"
+                                            android:textColor="@color/white"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:padding="8dp"
+                                        android:tint="#ccc"
+                                        app:srcCompat="@drawable/ic_stop_ads" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginStart="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center|start"
+                                            android:text="@string/text_no_ads_title"
+                                            android:textColor="@color/white"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_package"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:id="@+id/text_View_empty_list"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:padding="100dp"
+                                    android:text="در حال حاظر پکیجی وجود ندارد!"
+                                    android:textColor="@color/black"
+                                    android:visibility="gone" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_view_activity_package"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clipChildren="false"
+                                    android:clipToPadding="false"
+                                    android:layoutAnimation="@anim/layout_animation"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="8dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/bg_live">
+
+                                <TextView
+                                    android:id="@+id/text_view_later_buy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:text="بعدا میخرم!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_layout_layout_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <include layout="@layout/page_error" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

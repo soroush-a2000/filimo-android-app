@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: F">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/filimo/libs/YouTubeAndroidPlayerApi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

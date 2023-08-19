@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.movieboxtv.app.ui.activities.MovieActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff1d1c22">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_layout_ads"
+            android:background="#ff1d1c22">
+
+            <ImageView
+                android:id="@+id/image_view_activity_actor_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:visibility="visible">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="450dp"
+                            android:layout_marginTop="-10dp"
+                            app:cardBackgroundColor="#ff1d1c22"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/image_view_activity_actor_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="450dp"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/placeholder_profile" />
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_view_activity_actor_full_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Kristen Bell"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_view_activity_actor_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:visibility="gone"
+                                android:textColor="@color/white"
+
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_activity_actor_born"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="7dp"
+                                android:text="محل تولد : "
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_view_activity_actor_born"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="7dp"
+                                android:textColor="@color/white"
+                                android:text="USA"
+                                 />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_activity_actor_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="7dp"
+                                android:text="تاریخ تولد :"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_view_activity_actor_height"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="7dp"
+                                android:textColor="@color/white"
+                                android:text="استرالیا"
+                                 />
+                        </LinearLayout>
+
+
+                        <com.borjabravo.readmoretextview.ReadMoreTextView
+                            android:id="@+id/text_view_activity_actor_bio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingBottom="0dp"
+                            android:textColor="@color/white"
+
+                            android:textSize="16dp"
+                            app:colorClickableText="@color/yellow"
+                            app:trimMode="trimModeLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_activity_actor_movies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="آثار هنری"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="40dp"
+                                android:layout_height="5dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="5dp"
+                                android:background="@color/colorAccent" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_view_activity_activity_actor_movies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_marginTop="20dp"
+                android:theme="@style/CustomActionBar" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

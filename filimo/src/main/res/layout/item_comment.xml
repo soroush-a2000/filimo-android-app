@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout_comment_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_category_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="7dp"
+        app:cardBackgroundColor="#494949"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_view_comment_iten"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/placeholder_profile" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/text_view_name_item_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="start|center"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="Jocker"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:textColor="@color/white"
+                        android:id="@+id/text_view_time_item_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="end|center"
+                        android:padding="3dp"
+                        android:text="2 hours ago"
+
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/text_view_content_item_comment"
+
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="Je sui un commentaire"
+
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

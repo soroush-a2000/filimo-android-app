@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">movie box</string>
+
+    <string name="download_foler">movie box</string>
+
+    <string name="site_url">mahbor</string>
+    <!--لینک کوتاه پنل شما-->
+    <string name="panel_url">film.afrazideh2716.ir</string>
+
+    <string name="download_more_from_link">دانلود اپلیکیشن movie box از لینک زیر : \n</string>
+    <string name="download_more_from_link_direct">دانلود مستقیم اپلیکیشن movie box از لینک زیر : \n</string>
+
+    <!-- ِDon't edit -->
+    <string name="link_bazzar">https://cafebazaar.ir/app/</string>
+    <string name="link_myket">https://myket.ir/app/</string>
+    <!-- ِDon't edit -->
+
+    <string name="publisher_id">pub-3447169368463700</string>
+    <string name="AD_MOB_ENABLED_BANNER">true</string>
+
+    <string name="facebook_app_id">270317663642041</string>
+    <string name="fb_login_protocol_scheme">fb270317663642741</string>
+
+    <string-array name="orders_list">
+        <item>آخرین ها</item>
+        <item>به ترتیب امتیاز کاربران</item>
+        <item>به ترتیب امتیاز IMDb</item>
+        <item>به ترتیب عنوان</item>
+        <item>به ترتیب سال ساخت</item>
+        <item>به ترتیب بیشترین بازدید ها</item>
+    </string-array>
+
+    <string name="media_route_menu_title">Play On</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">تنظیمات</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="try_again">تلاش مجدد</string>
+    <string name="error_server">اتصال اینترنت خود را بررسی کنید</string>
+    <string name="no_source_available">محتوایی وجود ندارد</string>
+    <string name="cancel">لغو</string>
+    <string name="submit">ارسال</string>
+    <string name="rating_done">امتیاز شما با موفقیت ثبت شد</string>
+    <string name="write_comment">نوشتن دیدگاه</string>
+    <string name="comment_hidden">تایید نشده</string>
+    <string name="now_time">حالا</string>
+    <string name="off">خاموش</string>
+    <string name="on">روشن</string>
+    <string name="loading_subtitles">در حال بارگذاری زیرنویس ها ... </string>
+    <string name="seasons">فصل ها</string>
+    <string name="my_list">لیست مورد علاقه من</string>
+    <string name="filtres">فیلتر ها</string>
+    <string name="play_live">پخش زنده</string>
+
+
+    <string name="popular_starts">ستاره های محبوب</string>
+    <string name="movies_and_series_countries">فیلم و سریال ها</string>
+    <string name="channels_livetv">کانال های تلویزیونی</string>
+    <string name="movies_and_series">فیلم ها و سریال ها</string>
+
+    <string name="for_you">پیشنهاد های مشابه</string>
+    <string name="search_actors">جستجوافراد ...</string>
+    <string name="search_about_actors">جستجو ...</string>
+    <string name="account_disabled">این حساب غیرفعال شده است !</string>
+    <string name="another_login">با دستگاه دیگری وارد شده اید!</string>
+    <string name="operation_progress">در حال پردازش ، لطفا صبر کنید.</string>
+    <string name="operation_no_internet">مشکل در اتصال!</string>
+    <string name="operation_progressـcancelled">عملیات لغو شد!</string>
+    <string name="operation_loading">لطفا صبر کنید..</string>
+    <string name="get_this_movie_here">این فیلم را از لینک زیر دریافت کنید : </string>
+
+    <string name="see_more">بیشتر</string>
+
+    <string name="get_this_serie_here">سریال های بیشتری را از اینجا دریافت کنید</string>
+    <string name="get_this_channel_here">این کانال را از لینک زیر تماشا کنید</string>
+
+    <string name="file_has_been_downloaded">فایل با موفقیت بارگیری شد</string>
+    <string name="Downloaded">با موفقیت بارگیری شد</string>
+    <string name="exit">خروج</string>
+    <string name="policy_privacy">قوانین استفاده</string>
+    <string name="action_rate">امتیاز به اپلیکیشن</string>
+    <string name="action_support">پشتیبانی</string>
+    <string name="share_this_app">به اشتراک گذاری اپلیکیشن</string>
+    <string name="home">خانه</string>
+    <string name="my_profile">پروفایل من</string>
+    <string name="Logout">خروج از حساب</string>
+    <string name="login">حساب کاربری</string>
+    <string name="subscribe">اشتراک ویژه</string>
+    <string name="later">بعداً</string>
+    <string name="please_login">ورود به حساب کاربری</string>
+    <string name="message_logout">شما با موفقیت از حساب خود خارج شدید</string>
+    <string name="hint_name">نام</string>
+    <string name="hint_edit_text_old_pass">رمز عبور فعلی</string>
+    <string name="hint_edit_text_new_pass">رمز عبور جدید</string>
+    <string name="hint_edit_text_new_confirm_pass">تکرار رمز عبور جدید</string>
+    <string name="update_my_profile">بروزرسانی اطلاعات</string>
+    <string name="error_short_value">تعداد کاراکتر ها کوتاه است!</string>
+    <string name="infos_updated_successfully">اطلاعات شما با موفقیت به روزرسانی شد</string>
+    <string name="rate_this_channel">امتیاز دادن برای این کانال</string>
+    <string name="rate_this_serie_tv">امتیاز دادن برای این سریال</string>
+    <string name="rate_this_movie">امتیاز دادن برای این فیلم</string>
+    <string name="channel_added_fav">این کانال به لیست علاقه مندی اضافه شده است</string>
+    <string name="channel_removed_fav">این کانال از لیست علاقه مندی حذف شده است</string>
+    <string name="website">وب سایت</string>
+    <string name="update_now">بروزرسانی</string>
+    <string name="go_out">خروج</string>
+    <string name="novpn">برای استفاده از اپلیکیشن لطفا vpn یا پروکسی خود را غیر فعال کنید.</string>
+    <string name="skip">رد کردن</string>
+    <string name="title_notification">فعال / غیر فعال کردن اعلانات</string>
+    <string name="label_notification">دریافت اعلان فیلم و سریال های جدید</string>
+    <string name="clear_cache">پاک کردن کش</string>
+    <string name="label_cache">در حال حاضر :</string>
+    <string name="contact_us">تماس با ما</string>
+    <string name="version_label">نسخه</string>
+    <string name="enable_subtitles">زیرنویس ها</string>
+    <string name="hint_email">ایمیل</string>
+    <string name="hint_message">پیام شما</string>
+    <string name="send_support">ارسال پیام</string>
+    <string name="message_sended">پیام با موفقیت ارسال شد</string>
+    <string name="error_mail_valide">لطفا یک ایمیل معتبر وارد نمایید</string>
+
+    <string name="title_slide_1">به اپلیکیشن movie box خوش آمدید</string>
+    <string name="description_slide_1">با تشکر از دانلود این اپلیکیشن ، اپلیکیشن ویژه محتوای ویدئویی</string>
+
+    <string name="title_slide_2">تماشای همه چیز در یک اپلیکیشن</string>
+    <string name="description_slide_2">دسترسی به  فیلم ها ، سریال ها ، کانال زنده تلویزیون و موارد دیگر در یک اپلیکیشن </string>
+
+    <string name="title_slide_3">استفاده از زیرنویس</string>
+    <string name="description_slide_3">فیلم ها  و سریال های مورد علاقه خود را با زبان اصلی با استفاده از زیرنویس ها تماشا کنید</string>
+
+    <string name="title_slide_4">دانلود و تماشای آفلاین</string>
+    <string name="description_slide_4">امکان دانلود فیلم ها سریال ها و تماشای آفلاین</string>
+
+    <string name="title_slide_5">تماشا در تلویزیون خانگی</string>
+    <string name="description_slide_5">فیلم ها ، سریال ها و کانال تلویزیونی را به تلویزیون منتقل کنید و با راحتی تماشا کنید</string>
+
+    <string name="skip_intro">ردکردن</string>
+    <string name="next_intro">بعدی</string>
+    <string name="finish_intro">تمام</string>
+
+    <string name="premium_title">خرید اشتراک برای اپلیکیشن movie box</string>
+    <string name="premium_title_extension">تمدید اشتراک</string>
+    <string name="description_subsribte">با داشتن اشتراک اپلیکیشن movie box به امکانات زیر دسترسی خواهید داشت : </string>
+    <string name="download_premium_content">دانلود فیلم های ویژه</string>
+    <string name="play_premium_content">پخش آنلاین فیلم های ویژه</string>
+    <string name="text_no_ads_title">غیر فعال شدن تبلیغات</string>
+    <string name="premium_title_play">برای پخش این محتوا نیاز به اشتراک دارید!</string>
+    <string name="premium_title_download">برای دانلود این محتوا نیاز به اشتراک دارید!</string>
+
+
+    <string name="watch_video_ads_to_unlock">تماشای ویدئوی تبلیغاتی و باز کردن محتوا</string>
+    <string name="subscribe_now">تهیه اشتراک به مدت 1 ماه</string>
+
+    <string name="there_was_a_problem">متاسفانه مشکلی پیش آمد!</string>
+    <string name="purchase_failed">خرید انجام نشد!</string>
+
+    <string name="use_content_for_free">قفل باز شد</string>
+    <string name="ad_text">برای دسترسی به محتوا تبلیغ را به صورت کامل تماشا کنید</string>
+    <string name="ad_fail">قفل باز نشد</string>
+
+
+</resources>

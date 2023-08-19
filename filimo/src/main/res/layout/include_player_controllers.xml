@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="playerVm"
+            type="com.movieboxtv.app.ui.player.CustomPlayerViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:padding="@dimen/global_widget_margin"
+        android:onClick="@{playerVm::onPlayerClicked}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/media_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/global_widget_margin"
+                android:visibility="@{playerVm.loadingComplete ? View.VISIBLE : View.GONE}"
+                app:imageResource="@{playerVm.playbackImageRes}"
+                android:onClick="@{playerVm::onPlayPauseClicked}"/>
+
+            <TextView
+                android:id="@+id/media_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="bottom"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/media_current_position"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginLeft="@dimen/global_margin"-->
+                    <!--android:gravity="left"-->
+                    <!--android:text="@{playerVm.leftTimeIndicator}"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:visibility="@{!playerVm.pausable || uriProvider.videoUri == null ? View.GONE : View.VISIBLE}"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/media_duration"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="@dimen/global_margin"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="@{playerVm.rightTimeIndicator}"-->
+                    <!--android:textColor="@android:color/white"/>-->
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/bottom_container_controller"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<SeekBar-->
+                    <!--android:id="@+id/media_seek_bar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:max="@{playerVm.videoDuration}"-->
+                    <!--android:progress="@{playerVm.videoPosition}"-->
+                    <!--android:visibility="@{playerVm.videoDuration > 0 ? View.VISIBLE : View.GONE}"-->
+                    <!--android:layout_toLeftOf="@+id/media_screen_selection"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/media_screen_selection"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:padding="@dimen/global_widget_margin"-->
+                    <!--app:imageResource="@{playerVm.immersiveMode ? R.drawable.ic_full_screen_collapse : R.drawable.ic_full_screen_expand}"-->
+                    <!--app:onClick="@{playerVm::onScreenSelectionClicked}"/>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+    </FrameLayout>
+
+</layout>

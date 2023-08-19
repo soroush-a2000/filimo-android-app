@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.cafebazaar.Poolakey:poolakey:1.3.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d293a9650785cc4b59dc6918dccfc016/transformed/jetified-poolakey-1.3.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d293a9650785cc4b59dc6918dccfc016/transformed/jetified-poolakey-1.3.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.cafebazaar.Poolakey/poolakey/1.3.0/9f86a37b28e9343fe3089585c508a7ef2f1db479/poolakey-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/dialog_radius"
+        android:id="@+id/linear_layout_rate"
+        android:visibility="visible"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:lines="2"
+            android:minLines="2"
+            android:text="به اپلیکیشن چند ستاره میدهید؟"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:layout_gravity="center"
+            android:id="@+id/AppCompatRatingBar_dialog_rating_app"
+            android:indeterminateTint="#ffffff"
+            android:foregroundTint="#ffffff"
+            android:progressTint="#ffffff"
+            android:backgroundTint="@color/gray"
+            android:secondaryProgressTint="@color/gray"
+            android:progressBackgroundTint="@color/gray"
+            android:rating="0"
+            android:stepSize="1"
+            android:elevation="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/relative_layout_user"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_never"
+                android:textStyle="bold"
+                android:text="دیگر نشان نده"
+                android:textColor="@color/dark_gray"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/button_later"
+                android:textStyle="bold"
+                android:text="@string/later"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/dialog_radius"
+        android:id="@+id/linear_layout_feedback"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:lines="1"
+            android:gravity="center|start"
+            android:text="بازخورد"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:id="@+id/edit_text_feed_back"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="10dp"
+            android:gravity="top|start"
+            android:hint="نوشتن بازخورد ..."
+
+            android:background="@drawable/comment_bg_write"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_cancel"
+                android:textStyle="bold"
+                android:text="لغو"
+                android:textColor="@color/gray"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/buttun_send_feedback"
+                android:textStyle="bold"
+                android:text="ارسال"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
