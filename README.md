@@ -54,9 +54,7 @@
 # تصاویر محیط اپلیکیشن 
 
 
-![alt text](https://s6.uupload.ir/files/photo_2023-08-20_04-46-06_65aj.jpg)
-![alt text](https://s6.uupload.ir/files/photo_2023-08-20_04-46-09_9hrg.jpg)
-![alt text](https://s6.uupload.ir/files/photo_2023-08-20_04-46-12_8nmz.jpg)
-![alt text](https://s6.uupload.ir/files/photo_2023-08-20_04-46-15_x9i5.jpg)
+![alt text](https://s6.uupload.ir/files/untitled-185234_yml5.png)
+![alt text](https://s6.uupload.ir/files/untitled-198712_oqc3.png)
 
 
