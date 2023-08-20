@@ -51,7 +51,7 @@
 # آموزش راه اندازی
 برای این سورس کد یک آموزش کامل تهیه کرده بودم که میتونید توی پلی لیست زیر بهش دسترسی داشته باشید : https://www.youtube.com/watch?v=1o6OXUoCFLY&list=PL2xwG4TmexWYqmG0-kcOl8fXd5Z5Z-12O&pp=gAQBiAQB<br>
 
-# نصاویر محیط اپلیکیشن 
+# تصاویر محیط اپلیکیشن 
 
 
 ![alt text](https://s6.uupload.ir/files/photo_2023-08-20_04-46-06_65aj.jpg)
